@@ -1,0 +1,23 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strikeitnyc/web-components.git"
+  },
+  "author": "Nicole Ehrlich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strikeitnyc/web-components/issues"
+  },
+  "homepage": "https://github.com/strikeitnyc/web-components#readme"
+}
