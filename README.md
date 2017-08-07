@@ -1,5 +1,4 @@
 # atomic-design-app
-## based on  aurelia-skeleton-navigation
 
 ## Running The App
 
