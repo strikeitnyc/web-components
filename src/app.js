@@ -1,6 +1,6 @@
 export class App {
   configureRouter(config, router) {
-    config.title = 'Skills Assessment';
+    config.title = 'Atomic Design App';
     config.map([
       { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' },
       { route: 'atoms',         name: 'atoms',        moduleId: 'atoms',        nav: true, title: 'Atoms' },

@@ -1,7 +1,15 @@
 <template>
-  <section>
-    <h2>${heading}</h2>
-    <h3>Buttons</h3>
-    <compose view-model="./demo-buttons" model.bind="buttons" class="o-grid"></compose>
+  <section class="c-section">
+    <h2 class="c-section__title">${heading}</h2>
+    <p class="c-section__content">Atoms are the most basic components that make up the UI, and are the building blocks that make up molecules. Atoms have no context until applied at a molecule.</p>
+
+    <h3 class="c-section__subtitle">Buttons</h3>
+    <compose view-model="./elements/demo-buttons" model.bind="buttons" class="o-grid"></compose>
+
+    <h3 class="c-section__subtitle">Links</h3>
+    <a class="c-link">A normal link</a>
+
+    <h3 class="c-section__subtitle">Text Input</h3>
+    <input class="c-form__input--text" placeholder="text input">
   </section>
 </template>
