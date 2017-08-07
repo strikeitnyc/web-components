@@ -1,0 +1,18 @@
+.c-section {
+  padding-bottom: 2em;
+  font-family: 'open-sans', 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.c-section__title {
+  padding-bottom: 0.5em;
+}
+.c-section__content {
+  padding-bottom: 2em;
+}
+.c-section__subtitle {
+  margin-top: 3em;
+  padding: 2em 0 1em;
+  border-top: 1px solid #eee;
+}
+.c-section__subtitle:first-of-type {
+  margin-top: 0;
+}

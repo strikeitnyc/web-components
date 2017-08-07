@@ -6,10 +6,11 @@
   box-sizing: border-box;
   display: inline-block;
   padding: 1.1875em 3.15em;
+  border: 0;
   font-size: 16px;
-  font-size: 1rem;
   font-weight: 700;
   line-height: 1.4;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   transition: all 0.3s;
@@ -28,7 +29,6 @@
 .c-button--small {
   padding: .6em 2.6em .7em;
   font-size: 14px;
-  font-size: .875rem;
   font-weight: 900;
 }
 /* NOTE: Primary in this case refers to the color palette.
@@ -73,6 +73,10 @@
   padding-bottom: 1em;
   background-color: transparent;
 }
+.c-button--short {
+  padding: 0.6275em 1.4em;
+  font-size: 12px;
+}
 .c-button--primary.c-button--hollow {
   border-color: #FFC223;
   color: #FFC223;
@@ -95,30 +99,4 @@
 .c-button--secondary.c-button--hollow:focus {
   color: #fff;
   background-color: #35adf7;
-}
-.c-button--centered {
-  display: table;
-  margin: 0 auto;
-}
-.c-button--short {
-  padding: 0.6275em 1.4em;
-  font-size: 12px;
-  font-size: 0.75rem;
-}
-.c-button--shadow {
-  box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.2); 
-}
-.c-button--no-shadow {
-  box-shadow: none; 
-}
-.c-button--no-transform {
-  text-transform: none;
-}
-.c-button--accent-dark {
-  background: #2fd47c;
-}
-.c-button--accent-dark:hover,
-.c-button--accent-dark:active,
-.c-button--accent-dark:focus {
-  background: #28ba6c;
 }

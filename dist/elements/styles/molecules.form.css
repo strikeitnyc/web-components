@@ -1,0 +1,22 @@
+.c-form__input--text {
+    display: block;
+    width: 100%;
+    padding: .6em 1em;
+    margin-bottom: .25em;
+    font-weight: normal;
+    line-height: 1.618;
+    color: #333;
+    background: #fff;
+    outline: 0;
+    border: 2px solid #e2e4e7;
+    border-radius: 2px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-family: inherit;
+}
+.c-form__submit {
+  float: right; 
+  margin: 1.5em 0;
+  padding: 0.75em 2em;
+  font-size: 14px;
+}
