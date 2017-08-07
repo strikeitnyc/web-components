@@ -1,23 +1,13 @@
-import {Todo} from './todo';
-
 export class App {
-  constructor() {
-    this.heading = "Todos";
-    this.todos = [];
-    this.todoDescription = '';
-  }
+  configureRouter(config, router) {
+    config.title = 'Skills Assessment';
+    config.map([
+      { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' },
+      { route: 'atoms',         name: 'atoms',        moduleId: 'atoms',        nav: true, title: 'Atoms' },
+      { route: 'molecules',     name: 'molecules',    moduleId: 'molecules',    nav: true, title: 'Molecules' },
+      { route: 'organisms',     name: 'organisms',    moduleId: 'organisms',    nav: true, title: 'Organisms' }
+    ]);
 
-  addTodo() {
-    if (this.todoDescription) {
-      this.todos.push(new Todo(this.todoDescription));
-      this.todoDescription = '';
-    }
-  }
-
-  removeTodo(todo) {
-    let index = this.todos.indexOf(todo);
-    if (index !== -1) {
-      this.todos.splice(index, 1);
-    }
+    this.router = router;
   }
 }

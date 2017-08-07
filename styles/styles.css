@@ -1,0 +1,269 @@
+h3 {
+  margin: 4em 0 1em !important; /* overriding bootstrap */
+}
+h3:first-of-type {
+  margin-top: 1em !important;  /* overriding bootstrap */
+}
+.c-link {
+  text-decoration: none;
+  outline: 0;
+  transition: all .3s;
+  cursor: pointer;
+}
+/* ==========================================================================
+   Button Component
+   ========================================================================== */
+.c-button,
+[class*="c-button"] {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1.1875em 3.15em;
+  border: 0;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition: all 0.3s;
+}
+.c-button,
+[class*="c-button"],
+.c-button:hover,
+[class*="c-button"]:hover,
+.c-button:active,
+[class*="c-button"]:active,
+.c-button:focus ,
+[class*="c-button"]:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.c-button--small {
+  padding: .6em 2.6em .7em;
+  font-size: 14px;
+  font-size: .875rem;
+  font-weight: 900;
+}
+/* NOTE: Primary in this case refers to the color palette.
+         Gold will be our primary color until otherwise noted */
+.c-button-primary,
+.c-button--primary {
+  color: #fff;
+  background: #fed00f; /* Old browsers */
+  background: linear-gradient(to bottom,  #fed00f 0%,#f29800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+}
+.c-button-primary:hover,
+.c-button-primary:active,
+.c-button-primary:focus,
+.c-button--primary:hover,
+.c-button--primary:active,
+.c-button--primary:focus {
+  /* RFE: We would like to do a transition for better UX.
+          But, CSS Transitions not supported for gradients.
+          Possible workaround: http://codepen.io/Hampus/full/oaByI */
+  background: #f29800; /* Old browsers */
+  background: linear-gradient(to bottom, rgba(254,198,15,1), rgba(242,142,0,1));
+}
+/* NOTE: Secondary in this case refers to the color palette.
+         Blue will be our secondary color until otherwise noted */
+.c-button--secondary {
+  background: #35adf7;
+  background: linear-gradient(to bottom,#35adf7 0,#0766d0 100%);
+}
+.c-button--secondary:hover,
+.c-button--secondary:active,
+.c-button--secondary:focus {
+  background: #18a1f5;
+  background: linear-gradient(to bottom,#18a1f5 0,#0660c5 100%);
+}
+.c-button--pill {
+  border-radius: 30px;
+}
+.c-button--hollow {
+  border: 3px solid;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: transparent;
+}
+.c-button--primary.c-button--hollow {
+  border-color: #FFC223;
+  color: #FFC223;
+  background: transparent;
+}
+.c-button--primary.c-button--hollow:hover,
+.c-button--primary.c-button--hollow:active,
+.c-button--primary.c-button--hollow:focus {
+  color: #fff;
+  background-color: #FFC223;
+}
+/* HACK: Reapproach button borders in future story */
+.c-button--secondary.c-button--hollow {
+  border-color: #35adf7;
+  color: #35adf7;
+  background: transparent;
+}
+.c-button--secondary.c-button--hollow:hover,
+.c-button--secondary.c-button--hollow:active,
+.c-button--secondary.c-button--hollow:focus {
+  color: #fff;
+  background-color: #35adf7;
+}
+.c-button--centered {
+  display: table;
+  margin: 0 auto;
+}
+.c-button--short {
+  padding: 0.6275em 1.4em;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.c-button--shadow {
+  box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.2); 
+}
+.c-button--no-shadow {
+  box-shadow: none; 
+}
+.c-button--no-transform {
+  text-transform: none;
+}
+.c-button--accent-dark {
+  background: #2fd47c;
+}
+.c-button--accent-dark:hover,
+.c-button--accent-dark:active,
+.c-button--accent-dark:focus {
+  background: #28ba6c;
+}
+
+.c-form__input--text {
+    display: block;
+    width: 100%;
+    padding: .6em 1em;
+    margin-bottom: .25em;
+    font-weight: normal;
+    line-height: 1.618;
+    color: #333;
+    background: #fff;
+    outline: 0;
+    border: 2px solid #e2e4e7;
+    border-radius: 2px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-family: inherit;
+}
+.c-form__submit {
+  float: right; 
+}
+
+.c-nav--primary {
+  display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.c-nav__item {
+  display: inline-block;
+  margin: 0 .75em;
+}
+.c-nav__link {
+  position: relative;
+  padding-bottom: .25em;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+}
+.c-nav__link:hover,
+.c-nav__link:active,
+.c-nav__link:focus {
+  text-decoration: none;
+  color: #555 !important; /* Bootstrap override */
+}
+.c-nav__link:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;     
+  background: rgba(85,85,85,0.7);
+  content: '';
+  opacity: 0;
+  transition: opacity .3s,transform .3s;
+  transform: translateY(10px);
+}
+.c-nav__link:hover:after, 
+.c-nav__link:focus:after, 
+.c-nav__link:active:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.t-bg--gradient {
+  background-color: #1e5799; /* Old browsers */
+  background-image: linear-gradient(to right,  #1e5799 0%,#37b4f4 0%,#0570d4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0570d4',GradientType=1 ); /* IE6-9 */
+  color: #fff;
+}
+.t-bg--gradient .c-nav__link:after {
+  background: rgba(255,255,255,0.7);
+}
+body {
+  margin: 0;
+}
+
+.splash {
+  text-align: center;
+  margin: 10% 0 0 0;
+  box-sizing: border-box;
+}
+
+.splash .message {
+  font-size: 72px;
+  line-height: 72px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.splash .fa-spinner {
+  text-align: center;
+  display: inline-block;
+  font-size: 72px;
+  margin-top: 50px;
+}
+
+.page-host {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media print {
+  .page-host {
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    overflow-y: inherit;
+    overflow-x: inherit;
+  }
+}
+
+section {
+  margin: 0 20px;
+}
+
+.navbar-nav li.loader {
+  margin: 12px 24px 0 6px;
+}
+

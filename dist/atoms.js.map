@@ -1,0 +1,1 @@
+{"version":3,"sources":["atoms.js"],"names":["Atoms","heading","buttons","type"],"mappings":";;;;;;;;;;;;;;uBAAaA,K,GAGX,iBAAc;AAAA;;AAAA,aAFdC,OAEc,GAFJ,OAEI;;AACZ,aAAKC,OAAL,GAAe;AACbC,gBAAM,CACJ,CACE,kCADF,EAEE,qBAFF,CADI,EAKJ,CACE,oCADF,EAEE,uBAFF,CALI,EASJ,CACE,oCADF,EAEE,uBAFF,CATI,EAaJ,CACE,sCADF,EAEE,yBAFF,CAbI;AADO,SAAf;AAoBD,O","file":"atoms.js","sourceRoot":"/src"}

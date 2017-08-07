@@ -1,18 +1,17 @@
 <template>
-  <h1>${heading}</h1>
+  <require from="nav-bar.html"></require>
+  <require from="bootstrap/css/bootstrap.css"></require>
 
-  <form submit.trigger="addTodo()">
-    <input type="text" value.bind="todoDescription">
-    <button type="submit">Add Todo</button>
-  </form>
+  <nav-bar router.bind="router"></nav-bar>
 
-  <ul>
-    <li repeat.for="todo of todos">
-      <input type="checkbox" checked.bind="todo.done">
-      <span>
-        ${todo.description}
-      </span>
-      <button click.trigger="removeTodo(todo)">Remove</button>
-    </li>    
-  </ul>
+  <div class="page-host">
+
+    <require from="./secret-message"></require>
+    And now, it's time for a secret message: <secret-message></secret-message>
+    
+    <router-view></router-view>
+  </div>
+
+    
+
 </template>

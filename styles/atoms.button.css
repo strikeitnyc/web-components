@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Button Component
+   ========================================================================== */
+.c-button,
+[class*="c-button"] {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1.1875em 3.15em;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition: all 0.3s;
+}
+.c-button,
+[class*="c-button"],
+.c-button:hover,
+[class*="c-button"]:hover,
+.c-button:active,
+[class*="c-button"]:active,
+.c-button:focus ,
+[class*="c-button"]:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.c-button--small {
+  padding: .6em 2.6em .7em;
+  font-size: 14px;
+  font-size: .875rem;
+  font-weight: 900;
+}
+/* NOTE: Primary in this case refers to the color palette.
+         Gold will be our primary color until otherwise noted */
+.c-button-primary,
+.c-button--primary {
+  color: #fff;
+  background: #fed00f; /* Old browsers */
+  background: linear-gradient(to bottom,  #fed00f 0%,#f29800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+}
+.c-button-primary:hover,
+.c-button-primary:active,
+.c-button-primary:focus,
+.c-button--primary:hover,
+.c-button--primary:active,
+.c-button--primary:focus {
+  /* RFE: We would like to do a transition for better UX.
+          But, CSS Transitions not supported for gradients.
+          Possible workaround: http://codepen.io/Hampus/full/oaByI */
+  background: #f29800; /* Old browsers */
+  background: linear-gradient(to bottom, rgba(254,198,15,1), rgba(242,142,0,1));
+}
+/* NOTE: Secondary in this case refers to the color palette.
+         Blue will be our secondary color until otherwise noted */
+.c-button--secondary {
+  background: #35adf7;
+  background: linear-gradient(to bottom,#35adf7 0,#0766d0 100%);
+}
+.c-button--secondary:hover,
+.c-button--secondary:active,
+.c-button--secondary:focus {
+  background: #18a1f5;
+  background: linear-gradient(to bottom,#18a1f5 0,#0660c5 100%);
+}
+.c-button--pill {
+  border-radius: 30px;
+}
+.c-button--hollow {
+  border: 3px solid;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: transparent;
+}
+.c-button--primary.c-button--hollow {
+  border-color: #FFC223;
+  color: #FFC223;
+  background: transparent;
+}
+.c-button--primary.c-button--hollow:hover,
+.c-button--primary.c-button--hollow:active,
+.c-button--primary.c-button--hollow:focus {
+  color: #fff;
+  background-color: #FFC223;
+}
+/* HACK: Reapproach button borders in future story */
+.c-button--secondary.c-button--hollow {
+  border-color: #35adf7;
+  color: #35adf7;
+  background: transparent;
+}
+.c-button--secondary.c-button--hollow:hover,
+.c-button--secondary.c-button--hollow:active,
+.c-button--secondary.c-button--hollow:focus {
+  color: #fff;
+  background-color: #35adf7;
+}
+.c-button--centered {
+  display: table;
+  margin: 0 auto;
+}
+.c-button--short {
+  padding: 0.6275em 1.4em;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.c-button--shadow {
+  box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.2); 
+}
+.c-button--no-shadow {
+  box-shadow: none; 
+}
+.c-button--no-transform {
+  text-transform: none;
+}
+.c-button--accent-dark {
+  background: #2fd47c;
+}
+.c-button--accent-dark:hover,
+.c-button--accent-dark:active,
+.c-button--accent-dark:focus {
+  background: #28ba6c;
+}
